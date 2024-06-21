@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Flower Shop</title>
+  </head>
+  <body class=" ">
+    <div class="container">
+      <!-- header section -->
+      <div class="header">
+        <div class="menuIcon"><i class="fa-solid fa-bars"></i></div>
+        <div class="title">Flower</div>
+        <nav>
+          <a href="#Home">Home</a>
+          <a href="#About">About</a>
+          <a href="#Products">Products</a>
+          <a href="#Review">Review</a>
+          <a href="#Contact">Contact</a>
+        </nav>
+        <div class="icons">
+          <i class="fa-solid fa-heart"></i>
+          <i onclick="shopCardClick()"
+          class="fa-solid fa-cart-shopping"
+          id="shopCard"
+          style="position: relative"
+          ><button class="quantity">0</button></i
+        > 
+        </div>
+      </div>
+      <!-- header section ends -->
+      <!-- home section starts -->
+      <div class="home" id="Home">
+        <div class="homeText">
+          <h2>Fresh Flowers</h2>
+          <h3>Natural & Beatiful Flowers</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, fugiat
+            nisi. Atque placeat officiis asperiores praesentium. Sapiente
+            incidunt et magni fugit, est dignissimos laborum beatae itaque
+            voluptas cum perspiciatis praesentium.
+          </p>
+          <button class="shopBtn">Shop Now</button>
+        </div>
+      </div>
+      <!-- home section ends -->
+
+      <!-- about section starts -->
+      <div class="about" id="About">
+        <h2><span>About</span> Us</h2>
+        <div class="row">
+          <div class="video-wrapper">
+            <video src="video.mp4" loop autoplay muted></video>
+            <h3>best flower sellers</h3>
+          </div>
+          <div class="text-wrapper">
+            <h1>Why Choose Us</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+              commodi laborum mollitia accusamus exercitationem sit. Non
+              accusantium velit tempora in est voluptate, repudiandae id ducimus
+              impedit! Dolorum neque et quaerat.
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. A harum
+              officiis aut voluptas assumenda molestiae. Unde dignissimos
+              assumenda suscipit repellat maxime architecto perferendis
+              reprehenderit porro quaerat facilis, cum itaque soluta
+              <span id="dots">...</span>
+              <span id="more"
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Placeat inventore, quam exercitationem adipisci omnis nam, esse
+                impedit ipsum fuga ducimus optio et corporis rem quibusdam
+                aliquam assumenda ut provident vitae.</span
+              >
+            </p>
+            <button class="LearnBtn">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!-- about section ends -->
+      <!-- icons section start -->
+      <div class="icons-wrapper">
+        <div class="icon">
+          <i class="fa-solid fa-truck-fast"></i>
+          <div class="info">
+            <h3>Free Shipping</h3>
+            <h4>On All Orders</h4>
+          </div>
+        </div>
+        <div class="icon">
+          <i class="fa-solid fa-sack-dollar"></i>
+          <div class="info">
+            <h3>10 Days Returns</h3>
+            <h4>MoneyBag Guarantee</h4>
+          </div>
+        </div>
+        <div class="icon">
+          <i class="fa-solid fa-gift"></i>
+          <div class="info">
+            <h3>Offer & Gifts</h3>
+            <h4>On All Orders</h4>
+          </div>
+        </div>
+        <div class="icon">
+          <i class="fa-solid fa-credit-card"></i>
+          <div class="info">
+            <h3>Secure Payment</h3>
+            <h4>Protected by Paybal</h4>
+          </div>
+        </div>
+      </div>
+      <!-- icons section ends -->
+      <!-- products section starts -->
+      <div class="products-wrapper" id="Products">
+        <div class="title">
+          <h2>Latest <span>Products</span></h2>
+        </div>
+        <div class="productElement"></div>
+        <div class="productList">
+          <div class="checkOut">
+            <div  style="font-size: 20px; margin-left: 10px;" class="total">Total: <span style="color: black;">0</span></div>
+            <div style="margin-right: 10px;" class="closeShopping"><i class="fa-solid fa-x"></i></div>
+        </div>
+          <ul class="listCard">
+          </ul>
+        </div>
+      </div>
+      <!-- products section ends -->
+      <!-- review section starts -->
+      <div class="review-wrapper" id="Review">
+        <div class="title">Customer's<span>Review</span></div>
+        <div class="review">
+          <div class="customer-review">
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="content">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Cupiditate aliquam eaque deleniti velit expedita sunt voluptatem
+              officia eius quibusdam veniam sapiente est dolores, tempora quo
+              quis qui, ipsam, labore illum?
+            </div>
+            <div class="customer-about">
+              <img src="/images/customer1.jpg" alt="photo" />
+              <div class="customer-name">
+                <p>John Doe</p>
+                <p>Happy Customer</p>
+              </div>
+            </div>
+          </div>
+          <div class="customer-review">
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="content">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Cupiditate aliquam eaque deleniti velit expedita sunt voluptatem
+              officia eius quibusdam veniam sapiente est dolores, tempora quo
+              quis qui, ipsam, labore illum?
+            </div>
+            <div class="customer-about">
+              <img src="/images/customer2.avif" alt="photo" />
+              <div class="customer-name">
+                <p>John Doe</p>
+                <p>Happy Customer</p>
+              </div>
+            </div>
+          </div>
+          <div class="customer-review">
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="content">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Cupiditate aliquam eaque deleniti velit expedita sunt voluptatem
+              officia eius quibusdam veniam sapiente est dolores, tempora quo
+              quis qui, ipsam, labore illum?
+            </div>
+            <div class="customer-about">
+              <img src="/images/customer3.avif" alt="photo" />
+              <div class="customer-name">
+                <p>John Doe</p>
+                <p>Happy Customer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- review section ends -->
+      <!-- contact section starts -->
+      <div class="contact-wrapper" id="Contact">
+        <div class="title">Contact <span>Us</span></div>
+        <div class="contact">
+          <div class="input-wrapper">
+            <input type="text" name="" id="" placeholder="Enter your name" />
+            <br />
+            <input type="email" name="" id="" placeholder="Enter your email" />
+            <br />
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Enter your phone number"
+            />
+            <br />
+            <br />
+            <button class="sendBtn">Send</button>
+          </div>
+          <img
+            src="https://img.freepik.com/premium-photo/hydrangea-spring-greenhouse-flowers-flower-care-watering-soils-fertilizers-happy-woman-gardener-with-flowers-woman-care-flowers-garden-pleasant-delighted-florist-watering-flowers_265223-71785.jpg"
+            alt="photo"
+          />
+        </div>
+      </div>
+      <!-- contact section ends -->
+      <!-- footer starts -->
+      <div class="footer">
+        Created By <span>Frontend Developer</span> | All Rights Reserved
+      </div>
+      <!-- footer ends -->
+    </div>
+    <script src="index.js"></script>
+    <script src="product.js"></script>
+  </body>
+</html>
